@@ -4,7 +4,7 @@ script:
 - cd hello_world_application/
 - cmake . && cmake --build . && cmake --build . --target package
 - cmake . && cmake --build . && cmake --build . --target package_source
-cd ..//solver_application/
+- cd ..//solver_application/
 - cmake . && cmake --build . && cmake --build . --target package
 - cmake . && cmake --build . && cmake --build . --target package_source
 
