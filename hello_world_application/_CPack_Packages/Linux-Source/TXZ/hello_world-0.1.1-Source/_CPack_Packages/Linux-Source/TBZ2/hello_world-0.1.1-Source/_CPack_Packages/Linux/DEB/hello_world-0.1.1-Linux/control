@@ -1,9 +1,0 @@
-Architecture: 
-Description: The most stupid program ever written
-Maintainer: supsun-sockol@yandex.ru
-Package: hello_world
-Priority: optional
-Section: devel
-Version: 0.1.1
-Installed-Size: 33
-
