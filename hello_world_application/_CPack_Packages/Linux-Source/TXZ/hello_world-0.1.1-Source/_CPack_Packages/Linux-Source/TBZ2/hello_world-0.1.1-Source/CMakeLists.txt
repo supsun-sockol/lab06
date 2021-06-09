@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.4)
+project(hello_world)
+include_directories(formatter_ex_lib)
+add_subdirectory(formatter_ex_lib)
+add_executable(hello_world hello_world.cpp)
+target_link_libraries(hello_world formatter_ex)
+install(TARGETS hello_world DESTINATION bin)
+set(CPACK_PACKAGE_NAME "hello_world")
+set(CPACK_PACKAGE_VENDOR "MyCompany")
+set(CPACK_PACKAGE_CONTACT "https://myprojectsite.org")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "supsun-sockol@yandex.ru")
+set(CPACK_PACKAGE_DESCRIPTION "The most stupid program ever written")
+#set(CPACK_GENERATOR "DragNDrop")
+#set(CPACK_GENERATOR "DEB")
+set(CPACK_GENERATOR "RPM" "DEB")
+include(CPack)
+
+#cmake . && cmake --build . && cmake --build . --target package_source
